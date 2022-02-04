@@ -6,7 +6,11 @@ body{
 	font-size:150%;
 }
 
-Make the h1 heading bigger with a bold font
+
+
+Style the images*/
+
+
 h1{
 	font-size: 2em; 
 	font-weight: bold;
@@ -22,17 +26,48 @@ h1{
 .active a{
 	text-decoration: none;;
 }
-
-Style the images*/
-
+li {display:inline;}
 img{
-    height: 200px;
-    width: 200px;
-    border: 3px solid yellow;
+	display: inline;
+    height: 400px;
+    width: 500px;	
+    
     padding: 25px;
-    border-radius: 10px;
+    
     margin: 10px;
+	border-width: 5px;
+	border-style: dotted;
+	border-color: burlywood;
+	
+
 }
+
+.pseudo{
+	border-width: 5px;
+	border-style: solid;
+	border-color: wheat;
+}
+
+#background{
+	object-fit: cover;
+	
+}
+
+img:hover{
+	height: 600px;
+	width: 750px;
+
+}
+
+nav li{
+	background-color: white;
+	padding:10px;
+	width:25%;
+	border:1px solid black;
+	display: inline-block;
+	width: 20%;
+}
+
 
 /*
 Make the h2 heading match h1
@@ -56,14 +91,6 @@ header, nav, main, h1, footer{
 
 Change the styling for all of the list 
 items in the nav section
-nav li{
-	background-color: #ECFF4D;
-	padding:10px;
-	width:25%;
-	border:1px solid black;
-	display: inline-block;
-	width: 20%;
-}
 
 
 
