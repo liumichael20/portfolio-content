@@ -8,9 +8,14 @@
 	<!-- Link to the favicon image -->
 	<link rel="icon" href="images/favicon.ico">
 	<!-- Link to the reset file -->
+	<script src="https://kit.fontawesome.com/1552fc74f0.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/html5reset.css">
 	<!-- Link to the stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 	<title>Portfolio</title>
 </head>
 
@@ -23,39 +28,59 @@
 			<ul>
 				<!-- Since I am on the index file I added class = action to the link to index. -->
                 <li ><a href = "index.html">Home</a></li>
-				<li><a href = "aboutme.html" >About Me</a></li>
+				<li><a href = "aboutme.html" >About</a></li>
 				<li class="active"><a href = "portfolio.html">Portfolio</a></li>
 				<li><a href = "services.html">Services</a></li>
 			</ul>
 		</nav>
 		<!-- The h1 is a semantic tag that aids accessibility -->
-		<h1>Headshots By Liu</h1>
+		<h1 class="HBLLogo"><a href=index.html>Headshots By Liu</a></h1>
 	</header>
 
 	<!-- Every page should have a main tag for accessibility -->
-	<main>
-        <p> See some examples of my past headshots!</p>
-        <ul>
+	<main id="portfolioContainer">
+		<div class="pictures">
+			<ul>
             
-            <li> <img src = "images/Advaith1.jpg" alt = "Headshot of Graduate Student Advaith" class="pseudo"> </li>
-            <li> <img src = "images/Advaith2.jpg" alt = "Headshot of Graduate Student Advaith"> </li>
-            <li> <img src = "images/Ella1.jpg" alt = "Headshot of Student Named Ella" class="pseudo"> </li>
-            <li> <img src = "images/Ella2.jpg" alt = "Another Angle Headshot of Student Named Ella"> </li>
-            <li> <img src = "images/Emilee1.jpg" alt = "Headshot of STEM student Emilee" class="pseudo"> </li>
-            <li> <img src = "images/Emilee2.jpg" alt = "Side Angle of STEM student Emilee"> </li>
-            <li> <img src = "images/Emily1.jpg" alt = "Headshot of Student Emily" class="pseudo"> </li>
-            <li> <img src = "images/Emily2.jpg" alt = "Different Angle of Student Emily"> </li>
-            <li> <img src = "images/Jackie1.jpg" alt = "Headshot of Junior Student Jackie" class="pseudo"> </li>
-            <li> <img src = "images/Jackie2.jpg" alt = "Another Angle Of Jackie"> </li>
-
-            
-        </ul>
-        <p> Thanks for checking out my page. Make sure to book your own session!</p>
+				<li> <img src = "images/Advaith1.jpg" alt = "Headshot of Graduate Student Advaith" class="pseudo"> 
+					<h3>
+						TEMP NAME OF PERSON
+					</h3>
+					<p>
+						TEMP SHORT DESCRIPTION (MAJOR, SCHOOL, ETC)
+					
+					</p>
+				</li>
+				
+				<li> <img src = "images/Advaith2.jpg" alt = "Headshot of Graduate Student Advaith"> </li>
+				<p>
+					testtestetest
+				</p>
+	
+				<li> <img src = "images/Ella1.jpg" alt = "Headshot of Student Named Ella" class="pseudo"> </li>
+				<li> <img src = "images/Ella2.jpg" alt = "Another Angle Headshot of Student Named Ella"> </li>
+				<li> <img src = "images/Emilee1.jpg" alt = "Headshot of STEM student Emilee" class="pseudo"> </li>
+				<li> <img src = "images/Emilee2.jpg" alt = "Side Angle of STEM student Emilee"> </li>
+				<li> <img src = "images/Emily1.jpg" alt = "Headshot of Student Emily" class="pseudo"> </li>
+				<li> <img src = "images/Emily2.jpg" alt = "Different Angle of Student Emily"> </li>
+				<li> <img src = "images/Jackie1.jpg" alt = "Headshot of Junior Student Jackie" class="pseudo"> </li>
+				<li> <img src = "images/Jackie2.jpg" alt = "Another Angle Of Jackie"> </li>
+	
+			
+			</ul>
+		</div>
+		<div class="descriptions">
+			
+			
+		</div>
+		
 	</main>	
+	<div class="footer">
+		<p> liumichael20@gmail.com <br> (573)-489-1816
+		</p>
+		<h1>Headshots By Liu</h1>
+		<p> Keep In Touch: <br><a href="https://www.instagram.com/headshotsbyliu/"> <i class="fa-brands fa-instagram fa-beat"> Instagram</i></a></p>
+	</div>
 
-	<!-- Footer is a sematic tag page that aids readability -->
-	<footer>
-		<p>Michael Liu 2022</p>
-	</footer>
 </body>
 </html>

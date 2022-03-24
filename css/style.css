@@ -1,100 +1,234 @@
-/*Add padding and margin to space out the page.
-Make the font larger too.
-body{
-	margin:1%;
-	padding:1%;
-	font-size:150%;
+header{
+	min-height: 10em;
+}
+p, label, h3{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	line-height: 1.8em;
+
 }
 
-
-
-Style the images*/
-
-
-h1{
-	font-size: 2em; 
-	font-weight: bold;
+.container{
+	display:grid;
+	margin:auto;
+	grid-template-rows: 2fr 1fr 1fr;
 }
-
-
-.active{
-	background: white;
-    text-transform: uppercase;
+.mainInfo{
 	text-align: center;
-}
-
-.active a{
-	text-decoration: none;;
-}
-li {display:inline;}
-img{
-	display: inline;
-    height: 400px;
-    width: 500px;	
-    
-    padding: 25px;
-    
-    margin: 10px;
-	border-width: 5px;
-	border-style: dotted;
-	border-color: burlywood;
+	margin-top: 80px;
 	
 
 }
-
-.pseudo{
-	border-width: 5px;
-	border-style: solid;
-	border-color: wheat;
+.mainInfo p {
+	margin-bottom: 20px;
 }
 
-#background{
-	object-fit: cover;
+.mainInfo b{
+	font-weight: bold;
+}
+.title{
+	font-size: 40px;
+	font-weight:bold;
+}
+
+.form{
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+	
+	background-color: lightgray;
+}
+input, textarea{
+	height: 15px;
+	
+	border-radius: 5px;
+	
+}
+.footer{
+	display:flex;
+	justify-content: space-between;
+	margin: 20px 40px;
+	padding: 50px;
+	text-decoration: underline;
+	font-size: 1vw;
+	
+}
+.footer p , .footer i{
+	font-size: 1.2em;
+}
+.footer h1{
+	color:black;
+	position: absolute;
+	left: 41vw;
+	
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight:400;
+	font-size:3em; 
 	
 }
 
-img:hover{
-	height: 600px;
-	width: 750px;
-
-}
-
-nav li{
-	background-color: white;
-	padding:10px;
-	width:25%;
-	border:1px solid black;
-	display: inline-block;
-	width: 20%;
+#portfolioContainer{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 
-/*
-Make the h2 heading match h1
-h2{
+#mainPortfolio{
+	position:absolute;
+	top:50vh;	
+	right:41%;
+	font-family: 'Roboto', sans-serif;
+	font-weight:400;
+	color:white;
+	text-decoration: none;
+	font-size: 4em;
+	text-align: center;
+	margin:auto;
+	
+}
+#mainPage nav li a{
+	float: right;
+	color: white;
+	text-align: center;
+	padding: 40px 16px;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
+	font-size: 16px;
+	margin-right: 2em;
+	padding-left: 0;
+	margin-left: 0;
+	
+	
+}
+nav li a{
+	
+	float: right;
+	color: black;
+	text-align: center;
+	padding: 40px 16px;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
+	font-size: 16px;
+	margin-right: 2em;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.HBLLogoWhite a{
+	
+	float:left;
+	color: white;
+	text-align: center;
+	padding: 40px 10px;
+	font-weight:400;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
 	font-size: 2em; 
+	margin-left: 1.5em;
+	
+	
+}
+.HBLLogo a{
+	float:left;
+	color:black;
+	text-align:center;
+	padding: 40px 10px;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight:400;
+	font-size: 2em; 
+	margin-left: 1.5em;
+	
+}
+.backgroundImage{
+	min-height: 100vh;
+	
+	background: rgb(0,0,0,0.3) url('../images/background.jpg');
+	
+	background-position-x: center;
+	background-position-y: -50vh;
+	background-size: 90em;
+	background-blend-mode: darken;
+	
+}
+
+footer{
+	position: static;
+}
+
+#mainPage h1 a:visited {
+	text-decoration: none;
+	color:white;
+}
+
+img{
+	
+    
+    width: 46vw;
+	
+    
+    
+    
+    margin: 2vh 4vw;
+
+}
+li p, li h3{
+	text-align: center;
+	
+	
+}
+li h3{
 	font-weight: bold;
 }
 
-Improve the spacing for paragraphs AND headings
-p, h1, h2 {
-    padding: 10px;
+@media only screen and (max-width: 768px) {
+	.backgroundImage{
+		background-size: 50em;
+		background-position: center;
+	}
+	#mainPortfolio{
+		position: absolute;
+		text-align:center;
+		left: 35vw;
+	}
+	.footer{
+		padding: 50px 10px;
+		font-size: 2vw;
+	}
+	.footer h1{
+		left: 35vw;
+		font-size: 2em;
+	}
+	.footer p{
+		font-size: .95em;
+	}
+
+	nav li a, #mainPage nav li a {
+		font-size: 2vw;
+		margin-top: .4rem;
+	}
+	.HBLLogo, .HBLLogoWhite{
+		font-size: 2vw;
+	}
+	img{
+		width: 90vw;
+		margin: 2vh 5vw;
+	}
+
+	
+
 }
 
-Add borders around the main components and some
-space too
-header, nav, main, h1, footer{
-	border: 2px solid grey;
-	margin: 10px 0;
+
+
+i{
+	--fa-animation-duration: 2s;
 }
-
-
-Change the styling for all of the list 
-items in the nav section
-
-
-
-Added this so the links stay the same color
-a:visited{color:#0000FF}
-
-*/
+@media (prefers-reduced-motion){
+	i{
+		--fa-animation-duration: 0s;
+	}
+}

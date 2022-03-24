@@ -4,48 +4,96 @@
 
 <head>
 	<meta charset="UTF-8">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Link to the favicon image -->
+	<script src="https://kit.fontawesome.com/1552fc74f0.js" crossorigin="anonymous"></script>
 	<link rel="icon" href="images/favicon.ico">
 	<!-- Link to the reset file -->
 	<link rel="stylesheet" href="css/html5reset.css">
 	<!-- Link to the stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
-	<title>Home</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+	<title>Headshots By Liu</title>
 </head>
 
 <!-- All of the visible code in the page belongs in the body tag -->
-<body>
+<body id="mainPage">
 	<!-- Header is a sematic tag page that aids readability -->
+	<div class="backgroundImage">
 	<header>
 		<!-- Nav is a sematic tag page that aids accessibility -->
 		<nav>
 			<ul>
 				<!-- Since I am on the index file I added class = action to the link to index. -->
                 <li class="active" ><a href = "index.html">Home</a></li>
-				<li><a href = "aboutme.html" >About Me</a></li>
+				<li><a href = "aboutme.html" >About</a></li>
 				<li><a href = "portfolio.html">Portfolio</a></li>
 				<li><a href = "services.html">Services</a></li>
 			</ul>
 		</nav>
 		<!-- The h1 is a semantic tag that aids accessibility -->
-		<h1>Headshots By Liu</h1>
+		<h1 class="HBLLogoWhite"><a href=index.html>Headshots By Liu</a></h1>
 	</header>
+	<a href="portfolio.html" id="mainPortfolio">Portfolio</a>
+	</div>
+	
 
 	<!-- Every page should have a main tag for accessibility -->
-	<main>
-        <img src = "images/background.jpg" alt = "background image of many headshots" id="background"/>
-		<p>Standout with a good headshot this semester for your job/internship applications, club applications, and LinkedIn profile.
+	<main class="container">
+		<div class="mainInfo">
+			<p class="title">Book an appointment.</p>
 
-			I know how awkward and intimidating taking pictures can be. At Headshots By Liu, we take time to guide you through the process in a comfortable, professional manner, all while taking your best photos.
+			<p>The best headshot experience on campus, for only $35. </p>
+
+			<p>For all your club, internship, LinkedIn needs.</p>	
+				
+			<p>	Location: Ross (Contact For Change)</p>
+				
+			<p>	Not satisfied? <b>100% Refund Policy Offered</b></p>
+				
+			<p>	*Contact Me For Group Pricing</p>
+
+		</div>
+		<div class="form">
+						<!-- modify this form HTML and place wherever you want your form -->
+			<form
+			action="https://formspree.io/f/xwkyqgzq"
+			method="POST"
+			>
+			<label>
+				Your Email
+			<input type="email" name="email">
+			</label><br>
+			<label>
+				Your Name
+				<input type="text" name="name">
+			</label><br>
+			<label>
+				Date & Time
+			<input type="datetime" name="dateTime">
+			</label><br>
+			<label>
+				 Comments
+				<textarea name="comments"></textarea>
+			</label><br>
+
+			<button type="submit">Send</button>
+			</form>
+
+		</div>
+		<div class="footer">
+			<p> liumichael20@gmail.com <br> (573)-489-1816
 			</p>
-
+			<h1>Headshots By Liu</h1>
+			<p> Keep In Touch: <br><a href="https://www.instagram.com/headshotsbyliu/"> <i class="fa-brands fa-instagram fa-beat"> Instagram</i></a></p>
+		</div>
 	</main>
 
 	<!-- Footer is a sematic tag page that aids readability -->
-	<footer>
-		<p>For contact information: Phone Number: 573-489-1816, Email: liumichael20@gmail.com, Instagram: @headshotsbyliu
-		</p>
-	</footer>
+	
 </body>
 </html>
