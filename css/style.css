@@ -186,13 +186,13 @@ li h3{
 
 @media only screen and (max-width: 768px) {
 	.backgroundImage{
-		background-size: 60em;
+		background-size: 53em;
 		background-position: center;
 	}
 	#mainPortfolio{
 		position: absolute;
 		text-align:center;
-		margin: 0 auto;
+		margin: 0 center;
 	}
 	.footer{
 		padding: 50px 10px;
