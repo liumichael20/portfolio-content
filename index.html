@@ -20,32 +20,44 @@
 	<title>Headshots By Liu</title>
 </head>
 
-<!-- All of the visible code in the page belongs in the body tag -->
+
 <body id="mainPage">
-	<!-- Header is a sematic tag page that aids readability -->
+
 	<div class="backgroundImage">
+
 	<header>
-		<!-- Nav is a sematic tag page that aids accessibility -->
-		<nav>
+		<nav id="navigation" class="notActive">
+			<h1 class="HBLLogoWhite"><a href= "index.html">Headshots By Liu</a></h1>
+
+			<a href = "javascript:void(0);" class="navBar"
+			onclick="myFunction()">
+				<div class="one"></div>
+				<div class="two"></div>
+				<div class="three"></div>
+			</a>
 			<ul>
-				<!-- Since I am on the index file I added class = action to the link to index. -->
-                <li class="active" ><a href = "index.html">Home</a></li>
-				<li><a href = "aboutme.html" >About</a></li>
+				<li class="active" ><a href = "index.html">Home</a></li>
 				<li><a href = "portfolio.html">Portfolio</a></li>
-				<li><a href = "services.html">Services</a></li>
+				<li><a href = "faqs.html">FAQs</a></li>
+				<li><a href = "aboutme.html" >About</a></li>
+				
+				
+				
 			</ul>
 		</nav>
-		<!-- The h1 is a semantic tag that aids accessibility -->
-		<h1 class="HBLLogoWhite"><a href=index.html>Headshots By Liu</a></h1>
+		
+		
 	</header>
-	<a href="portfolio.html" id="mainPortfolio">Portfolio</a>
+
+	<a href="portfolio.html" id="mainPortfolio" class="">Portfolio</a>
+
 	</div>
 	
 
-	<!-- Every page should have a main tag for accessibility -->
-	<main class="container">
-		<div class="mainInfo">
-			<p class="title">Book an appointment.</p>
+	
+	<main >
+		<section class="mainInfo">
+			<h2>Book an appointment.</h2>
 
 			<p>The best headshot experience on campus, for only $35. </p>
 
@@ -57,43 +69,76 @@
 				
 			<p>	*Contact Me For Group Pricing</p>
 
-		</div>
-		<div class="form">
-						<!-- modify this form HTML and place wherever you want your form -->
-			<form
-			action="https://formspree.io/f/xwkyqgzq"
-			method="POST"
-			>
-			<label>
-				Your Email
-			<input type="email" name="email">
-			</label><br>
-			<label>
-				Your Name
-				<input type="text" name="name">
-			</label><br>
-			<label>
-				Date & Time
-			<input type="datetime" name="dateTime">
-			</label><br>
-			<label>
-				 Comments
-				<textarea name="comments"></textarea>
-			</label><br>
+		</section>
+		
+						
+		
 
-			<button type="submit">Send</button>
-			</form>
+		<div id="container">
+			
+			
+			
+			<form action="https://formspree.io/f/xwkyqgzq"
+			method="POST" id="contact_form">
+			  <div class="name">
+				<label for="name"></label>
+				<input type="text" placeholder="My name is" name="name" id="name_input" required>
+			  </div>
+			  <div class="email">
+				<label for="email"></label>
+				<input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+			  </div>
+			  <div class="telephone">
+				<label for="name"></label>
+				<input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+			  </div>
+			  <div class="subject">
+				<label for="subject"></label>
+				<select placeholder="Subject line" name="subject" id="subject_input" required>
+				  <option disabled hidden selected>Subject line</option>
+				  <option>I'd like to book an appointment</option>
+				  <option>I'd like to ask a question</option>
+				  <option>Other</option>
+				</select>
+			  </div>
+			  <div class="message">
+				<label for="message"></label>
+				<textarea name="message" placeholder="Message Here" id="message_input" cols="30" rows="5" required></textarea>
+			  </div>
+			  <div class="submit">
+				<input type="submit" value="Send Message" id="form_button" />
+			  </div>
+			</form><!-- // End form -->
+		  </div><!-- // End #container -->
 
-		</div>
-		<div class="footer">
-			<p> liumichael20@gmail.com <br> (573)-489-1816
-			</p>
-			<h1>Headshots By Liu</h1>
-			<p> Keep In Touch: <br><a href="https://www.instagram.com/headshotsbyliu/"> <i class="fa-brands fa-instagram fa-beat"> Instagram</i></a></p>
-		</div>
+
 	</main>
+
+	<footer>
+		
+		<p> liumichael20@gmail.com <br> (573)-489-1816
+		</p>
+		<h3>Headshots By Liu</h3>
+		<p> Keep In Touch: <br><a href="https://www.instagram.com/headshotsbyliu/"> <i class="fa-brands fa-instagram fa-beat"> Instagram</i></a></p>
+	
+	</footer>
 
 	<!-- Footer is a sematic tag page that aids readability -->
 	
+
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("navigation");
+		  
+		  if (x.className === "notActive") {
+			x.className = "active";
+			document.getElementById("mainPortfolio").className = "hidden";
+
+		  } else {
+			x.className = "notActive";
+			document.getElementById("mainPortfolio").className = "";
+		  }
+		}
+	</script>
 </body>
 </html>
