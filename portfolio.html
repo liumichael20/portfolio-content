@@ -27,8 +27,9 @@
 		<nav id="navigation" class="notActive">
 			<h1 class="HBLLogoBlack"><a href= "index.html">Headshots By Liu</a></h1>
 
-			<a href = "javascript:void(0);" class="navBar"
-			onclick="myFunction()">
+			<a href = "javascript:void(0);" class="navBarBlack"
+			onclick="myFunction()" >
+				<p class="hidden">menuButton</p>
 				<div class="one"></div>
 				<div class="two"></div>
 				<div class="three"></div>
@@ -48,49 +49,119 @@
 	</header>
 
 	<!-- Every page should have a main tag for accessibility -->
-	<main id="portfolioContainer">
-		<div class="pictures">
-			<ul>
-            
-				<li> <img src = "images/Advaith1.jpg" alt = "Headshot of Graduate Student Advaith" class="pseudo"> 
-					<h3>
-						TEMP NAME OF PERSON
-					</h3>
-					<p>
-						TEMP SHORT DESCRIPTION (MAJOR, SCHOOL, ETC)
-					
-					</p>
-				</li>
-				
-				<li> <img src = "images/Advaith2.jpg" alt = "Headshot of Graduate Student Advaith"> </li>
+	<main id="portfolioContainer" class = "">
+		
+		<ul>
+		
+			<li> <img src = "images/kavinasheth.jpg" alt = "Headshot of Sophomore Kavina Sheth" > 
+				<h3>
+					Kavina Sheth
+				</h3>
 				<p>
-					testtestetest
+					Sophomore in College of Engineering studying Mechanical Engineering
 				</p>
-	
-				<li> <img src = "images/Ella1.jpg" alt = "Headshot of Student Named Ella" class="pseudo"> </li>
-				<li> <img src = "images/Ella2.jpg" alt = "Another Angle Headshot of Student Named Ella"> </li>
-				<li> <img src = "images/Emilee1.jpg" alt = "Headshot of STEM student Emilee" class="pseudo"> </li>
-				<li> <img src = "images/Emilee2.jpg" alt = "Side Angle of STEM student Emilee"> </li>
-				<li> <img src = "images/Emily1.jpg" alt = "Headshot of Student Emily" class="pseudo"> </li>
-				<li> <img src = "images/Emily2.jpg" alt = "Different Angle of Student Emily"> </li>
-				<li> <img src = "images/Jackie1.jpg" alt = "Headshot of Junior Student Jackie" class="pseudo"> </li>
-				<li> <img src = "images/Jackie2.jpg" alt = "Another Angle Of Jackie"> </li>
-	
+			</li>
 			
-			</ul>
-		</div>
-		<div class="descriptions">
+			<li> <img src = "images/laurenlewallen.jpg" alt = "Headshot of GSI Lauren Lewallen" > 
+				<h3>
+					Lauren Lewallen
+				</h3>
+				<p>
+					GSI and Master's Candidate in Higher Education
+				</p>
+			</li>
+
+			<li> <img src = "images/matthewgoodman.jpg" alt = "Headshot of Sophomore Matthew Goodman"> 
+				<h3>
+					Matthew Goodman
+				</h3>
+				<p>
+					Sophomore in Michigan Ross School of Business, member of Greek Life
+				</p>
+			</li>
+			<li> <img src = "images/brookefarrell.jpg" alt = "Headshot of Freshman Brooke Farrell"> 
+				<h3>
+					Brooke Farrell
+				</h3>
+				<p>
+					Freshman in LSA College studying Economics, member of Phi Beta Lambda
+				</p>
+			</li>
+			<li> <img src = "images/carlospirela.jpg" alt = "Headshot of Sophomore Carlos Pirela"> 
+				<h3>
+					Carlos Pirela
+				</h3>
+				<p>
+					Sophomore in School of Music, Thatre, and Dance, studying pre-dental in STEM
+				</p>
+			</li>
+			<li> <img src = "images/zachweiss.jpg" alt = "Headshot of Sophomore Zach Weiss"> 
+				<h3>
+					Zach Weiss
+				</h3>
+				<p>
+					Sophomore in College of Engineering, studying Computer Science and IA for EECS 281
+				</p>
+			</li>
+			<li> <img src = "images/kalihightower.jpg" alt = "Headshot of Sophomore Kali Hightower"> 
+				<h3>
+					Kali Hightower
+				</h3>
+				<p>
+					Sophomore double majoring in Business at Ross and Dance in SMTD
+				</p>
+			</li>
+			<li> <img src = "images/jennashatzman.jpg" alt = "Headshot of Junior Jenna Shatzman"> 
+				<h3>
+					Jenna Shatzman
+				</h3>
+				<p>
+					Junior in College of LSA studying Communications and E-Board of MUSIC Matters
+				</p>
+			</li>
+			<li> <img src = "images/juliandong.jpg" alt = "Headshot of Freshman Julian Dong"> 
+				<h3>
+					Julian Dong
+				</h3>
+				<p>
+					Freshman in College of Engineering studying Computer Science
+				</p>
+			</li>
 			
-			
-		</div>
+
+		
+		</ul>
+		
 		
 	</main>	
-	<div class="footer">
+
+	<footer>
+		
 		<p> liumichael20@gmail.com <br> (573)-489-1816
 		</p>
-		<h1>Headshots By Liu</h1>
-		<p> Keep In Touch: <br><a href="https://www.instagram.com/headshotsbyliu/"> <i class="fa-brands fa-instagram fa-beat"> Instagram</i></a></p>
-	</div>
+		<h3>Headshots By Liu</h3>
+		<!--<p> Keep In Touch: <br><a href="https://www.instagram.com/headshotsbyliu/"> <i class="fa-brands fa-instagram fa-beat"> Instagram</i></a></p> -->
+		<p> Keep In Touch: <br><a href="https://www.instagram.com/headshotsbyliu/" alt="instagram"> <i class="fa-brands fa-instagram"> Instagram</i></a></p>
+	
+	</footer>
+
+
+
+
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("navigation");
+		  if (x.className === "notActive") {
+			x.className = "active";
+			document.getElementById("portfolioContainer").className = "hidden";
+			
+		  } else {
+			x.className = "notActive";
+			document.getElementById("portfolioContainer").className = "";
+			
+		  }
+		}
+	</script>
 
 </body>
 </html>

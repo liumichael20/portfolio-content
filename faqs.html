@@ -17,18 +17,18 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-	<title>About Me</title>
+	<title>FAQs</title>
 </head>
 
 
 <body>
-	<header>
+    <header>
 		<nav id="navigation" class="notActive">
 			<h1 class="HBLLogoBlack"><a href= "index.html">Headshots By Liu</a></h1>
 
 			<a href = "javascript:void(0);" class="navBarBlack"
 			onclick="myFunction()">
-				<p class="hidden">menuButton</p>
+                <p class="hidden">menuButton</p>
 				<div class="one"></div>
 				<div class="two"></div>
 				<div class="three"></div>
@@ -46,19 +46,60 @@
 		
 		
 	</header>
-	
-	<main id="aboutMe">
-        <img src = "images/aboutme.jpg" alt = "Picture of HBL founder Michael Liu" />
-		<p>Hey! Thanks for checking out my page. <br>
 
-            I'm a sophomore at the University of Michigan studying Information Analysis in SI, and minoring in Computer Science, Entrepreneurship, and Business.
-            <br>
-            Back home in New York, I loved taking pictures and capturing memories and videos with all my friends. Through different experiences, startups, and projects, I've learned in-depth photography and editing skills. Now, I'm bringing those skills to Michigan's campus.
-            <br>
-            I'm always excited to meet new people and capture new smiles! Can't wait to meet you!</p>
+    <main id = "faqs">
+        <h1>
+            Frequently Asked Questions
+        </h1>
 
-	</main>
-	
+        <section class="q1">
+            <h3>
+                Where Do We Take The Shoot?
+            </h3>
+            <p>
+                My standard location is at Ross, where we'll take shots in various locations (minimum 3) both inside and outside the building. 
+            </p>
+            <p>
+                If you have a request for a different location, contact me! 
+            </p>
+        </section>
+        <section class="q2">
+            <h3>
+                What Should I Wear?
+            </h3>
+            <p>
+                Most opt to wear a classic suit, tie or no tie is fine. If you don't have a suit or are going for a more casual look, I'd suggest clothing with minimal patterns, as that texture can distract from your headshot.
+            </p>
+        </section>
+        <section class="q3">
+            <h3>
+                How Many Photos Will I Get?
+            </h3>
+            <p>
+                I typically take 200-400 photos for a single client every session. I'll go over them and pick around 30 of the best photos to send to you. Among those 30, I will edit and retouch 5-10 photos. 
+            </p>
+        </section>
+        <section class="q4">
+            <h3>
+                What If I'm Not Fully Satisfied?
+            </h3>
+            <p>
+                If you're not fully satisfied, don't worry. I offer an 100% refund policy. Simply let me know and you'll get your money back, no questions asked.
+            </p>
+        </section>
+        <section class="q5">
+            <h3>
+                What Is Your Group Pricing?
+            </h3>
+            <p>
+                Contact me at liumichael20@gmail.com or (573)-489-1816 for more information.
+            </p>
+        </section>
+
+
+
+    </main>
+
 
 	<footer>
 		
@@ -70,8 +111,7 @@
 	
 	</footer>
 
-
-	<script>
+    <script>
 		function myFunction() {
 		  var x = document.getElementById("navigation");
 		  if (x.className === "notActive") {

@@ -31,6 +31,7 @@
 
 			<a href = "javascript:void(0);" class="navBar"
 			onclick="myFunction()">
+				<p class="hidden">menuButton</p>
 				<div class="one"></div>
 				<div class="two"></div>
 				<div class="three"></div>
@@ -74,26 +75,26 @@
 						
 		
 
-		<div id="container">
+		<div id="container" class ="">
 			
 			
 			
 			<form action="https://formspree.io/f/xwkyqgzq"
 			method="POST" id="contact_form">
 			  <div class="name">
-				<label for="name"></label>
+				<label for="name_input" class="hidden" >Name</label>
 				<input type="text" placeholder="My name is" name="name" id="name_input" required>
 			  </div>
-			  <div class="email">
-				<label for="email"></label>
+			  <div class="email_input" >
+				<label for="email_input" class="hidden"> Email</label>
 				<input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
 			  </div>
-			  <div class="telephone">
-				<label for="name"></label>
+			  <div class="telephone_input">
+				<label for="telephone_input" class="hidden">Phone</label>
 				<input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
 			  </div>
 			  <div class="subject">
-				<label for="subject"></label>
+				<label for="subject_input" class="hidden"> Subject</label>
 				<select placeholder="Subject line" name="subject" id="subject_input" required>
 				  <option disabled hidden selected>Subject line</option>
 				  <option>I'd like to book an appointment</option>
@@ -102,7 +103,7 @@
 				</select>
 			  </div>
 			  <div class="message">
-				<label for="message"></label>
+				<label for="message_input" class="hidden">Message</label>
 				<textarea name="message" placeholder="Message Here" id="message_input" cols="30" rows="5" required></textarea>
 			  </div>
 			  <div class="submit">
@@ -119,7 +120,8 @@
 		<p> liumichael20@gmail.com <br> (573)-489-1816
 		</p>
 		<h3>Headshots By Liu</h3>
-		<p> Keep In Touch: <br><a href="https://www.instagram.com/headshotsbyliu/"> <i class="fa-brands fa-instagram fa-beat"> Instagram</i></a></p>
+		<!--<p> Keep In Touch: <br><a href="https://www.instagram.com/headshotsbyliu/"> <i class="fa-brands fa-instagram fa-beat"> Instagram</i></a></p> -->
+		<p> Keep In Touch: <br><a href="https://www.instagram.com/headshotsbyliu/"> <i class="fa-brands fa-instagram"> Instagram</i></a></p>
 	
 	</footer>
 
@@ -129,14 +131,14 @@
 	<script>
 		function myFunction() {
 		  var x = document.getElementById("navigation");
-		  
 		  if (x.className === "notActive") {
 			x.className = "active";
 			document.getElementById("mainPortfolio").className = "hidden";
-
+			document.getElementById("container").className = "hidden";
 		  } else {
 			x.className = "notActive";
 			document.getElementById("mainPortfolio").className = "";
+			document.getElementById("container").className = "";
 		  }
 		}
 	</script>
