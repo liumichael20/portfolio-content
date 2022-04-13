@@ -3,6 +3,15 @@
 <html lang="en">
 
 <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6L5M2S3097"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6L5M2S3097');
+    </script>
 	<meta charset="UTF-8">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,50 +26,103 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-	<title>Headshots By Liu</title>
+	<title>Portfolio Navigation</title>
 </head>
 
 
 <body>
-    <div class="Header">
+    <a class="skip-to-content-link" href="#navContainer">
+		Skip to content
+	</a>
+	<header>
+		<nav id="navigation" class="notActive">
+			<h1 class="HBLLogoBlack"><a href= "index.html">Headshots By Liu</a></h1>
 
+			<a href = "javascript:void(0);" class="navBarBlack"
+			onclick="myFunction()" >
+				<p class="hidden">menuButton</p>
+				<div class="one"></div>
+				<div class="two"></div>
+				<div class="three"></div>
+			</a>
+			<ul>
+				<li ><a href = "index.html">Home</a></li>
+				<li class="active"><a href = "portfolioNav.html">Portfolio</a></li>
+				<li><a href = "faqs.html">FAQs</a></li>
+				<li><a href = "aboutme.html" >About</a></li>
+			</ul>
+		</nav>
+
+		
+		
+	</header>
+
+    <main id = "navContainer">
+        <img src = "images/kalihightower.jpg" alt="Picture of a headshot, featuring Kali Hightower, a Michigan Dancer" id="firstPic">
+        <section class="blurbLink">
+            <div class = "headshotBlurb">
+                <h1>
+                    Headshot Portfolio
+                </h1>
+                <p>
+                    During our session, I'll guide you through posing,
+                    take hundreds of pictures, and edit and send you the best of them. 
+                </p>
+                <p><em>-Schedule Your Appointment Now On Home Page</em>
+
+                </p>
+                
+            </div>
+            <a href="portfolio.html" > See My Work</a>
+        </section>
     
-    <nav>
-        <ul>
-            
-            <li><a href = "index.html">Home</a></li>
-            <li><a href = "aboutme.html" >About</a></li>
-            <li><a href = "portfolio.html">Portfolio</a></li>
-            <li><a href = "services.html">Services</a></li>
-        </ul>
-    </nav>
-    <h1 class="HBLLogo"><a href=index.html>Headshots By Liu</a></h1>
-    </div>
-
-    <main class = "navContainer">
-        <div class = "headshotBlurb">
-            <h1>
-                Headshot Portfolio
-            </h1>
-            <p>
-                During our session, I'll guide you through posing,
-                 take hundreds of pictures, and edit and send you the best of them. 
+        
+        
 
 
-            </p>
+        
 
-        </div>
-        <div class = "headshotPic">
-            <img src = "images/Kali1.jpg" alt="Picture of a headshot, featuring Kali Hightower, a Michigan Dancer">
-
-
-        </div>
-
-        <div class = "orgBlurb">
-
-        </div>
+        <img src = "images/orginization/180group.jpg" alt="Picture of a 180 Degrees Consulting, an Orginization On Campus, jumping">
+        <section class="blurbLink">
+            <div class = "orgBlurb">
+                <h1>
+                    Organization Portfolio
+                </h1>
+                <p>
+                    Offering shoots for organizations on campus — efficient, quality, and professional.
+                </p>
+                <p><em>-Contact me for pricing</em></p>
+                
+            </div>
+            <a href="portfolio.html" id="secondLink"> See My Work</a>
+        </section>
         
     </main>
+
+    <footer>
+		
+		<p> liumichael20@gmail.com <br> (573)-489-1816
+		</p>
+		<h3>Headshots By Liu</h3>
+		<!--<p> Keep In Touch: <br><a href="https://www.instagram.com/headshotsbyliu/"> <i class="fa-brands fa-instagram fa-beat"> Instagram</i></a></p> -->
+		<p> Keep In Touch: <br><a href="https://www.instagram.com/headshotsbyliu/" alt="instagram"> <i class="fa-brands fa-instagram"> Instagram</i></a></p>
+	
+	</footer>
+
+    <script>
+		function myFunction() {
+		  var x = document.getElementById("navigation");
+		  if (x.className === "notActive") {
+			x.className = "active";
+			document.getElementById("portfolioContainer").className = "hidden";
+			
+		  } else {
+			x.className = "notActive";
+			document.getElementById("portfolioContainer").className = "";
+			
+		  }
+		}
+	</script>
 
 
 </body>
