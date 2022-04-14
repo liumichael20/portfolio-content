@@ -69,7 +69,7 @@ em{
 	
 }
 
-#organizationContainer h3{
+#organizationContainer h2{
 	font-size: calc((2.2 - 1) * 1.2vh + 1rem);
 	font-weight: 400;
 }
@@ -334,7 +334,8 @@ h3{
 	
 }
 h2{
-	font-size: calc((2.8 - 1) * 1.2vh + 1rem);
+	font-size:calc((2.2 - 1) * 1.2vh + 1rem);
+	
 	font-weight: bold;
 	margin: 2em 0 1em 0;
 }
@@ -361,7 +362,7 @@ form{
 #portfolioContainer p {
 	margin-bottom: 30px;
 }
-#portfolioContainer h3{
+#portfolioContainer h2{
 	margin-top: 15px;
 }
 img{
@@ -385,7 +386,7 @@ img{
 	
 
 }
-#faqs h3{
+#faqs h2{
 	font-weight: 400;
 	margin: 20px 0;
 }
@@ -395,7 +396,7 @@ img{
 }
 
 @media only screen and (max-width: 768px){
-	#portfolioContainer ul li h3,
+	#portfolioContainer ul li h2,
 	#portfolioContainer ul li p{
 		position: absolute !important;
     clip: rect(1px,1px,1px,1px);
