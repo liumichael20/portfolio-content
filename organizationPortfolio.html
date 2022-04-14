@@ -29,3 +29,109 @@
 	<title>Organization Portfolio</title>
 </head>
 
+<body>
+	<a class="skip-to-content-link" href="#organizationContainer">
+		Skip to content
+	</a>
+	<header>
+		<nav id="navigation" class="notActive">
+			<h1 class="HBLLogoBlack"><a href= "index.html">Headshots By Liu</a></h1>
+
+			<a href = "javascript:void(0);" class="navBarBlack"
+			onclick="myFunction()" >
+				<p class="hidden">menuButton</p>
+				<div class="one"></div>
+				<div class="two"></div>
+				<div class="three"></div>
+			</a>
+			<ul>
+				<li ><a href = "index.html">Home</a></li>
+				<li class="active"><a href = "portfolioNav.html">Portfolio</a></li>
+				<li><a href = "faqs.html">FAQs</a></li>
+				<li><a href = "aboutme.html" >About</a></li>
+				
+				
+				
+			</ul>
+		</nav>
+		
+		
+	</header>
+
+
+	<main id="organizationContainer">
+		<section class="blurb">
+			<h3>180 Degrees Consulting</h3>
+			<p>I loved working with 180 degrees consulting. We had a two hour session, which included:</p>
+			<p><em>-Group Photos</em></p>
+			<p><em>-Analyst Class Photos</em></p>
+			<p><em>-Edited Headshot For Each Member</em></p>
+			<p><em>-Professional Stock Photos</em></p>
+
+		</section>
+		<ul>
+			<li><img src="images/orginization/180group.jpg" alt="180 Degrees Consulting Group Photo"></li>
+			<li><img src="images/orginization/180analysts.jpg" alt="Analyst Group in 180 Degrees Consulting"></li>
+			<li><img src="images/orginization/180headshot.jpg" alt="Headshot of E-Board Woman 180 Degrees Consulting"></li>
+			<li><img src="images/orginization/180headshot2.jpg" alt="Headshot of E-Board Man in 180 Degrees Consulting"></li>
+			<li><img src="images/orginization/180stockphoto.jpg" alt="Stock Photo of Group Having Fun"></li>
+			<li><img src="images/orginization/180stockphoto2.jpg" alt="Stock Photo of Member Laughing"></li>
+		</ul>
+
+		<section class="blurb">
+			<h3>Phi Beta Lambda</h3>
+			<p>I loved working with PBL. We had a 45-minute photoshoot for new merchandise, which included:</p>
+			<p><em>-Group Photos</em></p>
+			<p><em>-Women of PBL</em></p>
+			<p><em>-Photos Highlighting PBL Logo</em></p>
+		</section>
+
+		<ul id="firstRow">
+			<li><img src="images/orginization/pblbacks.jpg" alt="Women of PBL showing off Logos on back of merch"></li>
+			<li><img src="images/orginization/pblallyrenee.jpg" alt="Ally and Renee, Members in PBL"></li>
+			<li><img src="images/orginization/pblanuash.jpg" alt="Anu and Ash, E-Board and Officer in PBL"></li>
+			<li><img src="images/orginization/pblbacksmen.jpg" alt="Anu and Ash, E-Board and Officer in PBL"></li>
+		</ul>
+		<ul id="secondRow">
+			<li><img src="images/orginization/pblgroup.jpg" alt="Picture of PBL Brotherhood"></li>
+			<li><img src="images/orginization/pblgroupwomen.jpg" alt="Picture of Women of PBL"></li>
+		</ul>
+
+
+
+
+	</main>
+
+
+
+
+
+</body>
+
+	<footer>
+		
+		<p> liumichael20@gmail.com <br> (573)-489-1816
+		</p>
+		<h3>Headshots By Liu</h3>
+		<!--<p> Keep In Touch: <br><a href="https://www.instagram.com/headshotsbyliu/"> <i class="fa-brands fa-instagram fa-beat"> Instagram</i></a></p> -->
+		<p> Keep In Touch: <br><a href="https://www.instagram.com/headshotsbyliu/" alt="instagram"> <i class="fa-brands fa-instagram"> Instagram</i></a></p>
+	
+	</footer>
+
+    <script>
+		function myFunction() {
+		  var x = document.getElementById("navigation");
+		  if (x.className === "notActive") {
+			x.className = "active";
+			document.getElementById("portfolioContainer").className = "hidden";
+			
+		  } else {
+			x.className = "notActive";
+			document.getElementById("portfolioContainer").className = "";
+			
+		  }
+		}
+	</script>
+
+
+</html>
